@@ -1,8 +1,21 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/your-font.ttf') format('truetype');
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+  position: fixed;
+  inset: 0;
+
+  .page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 }
