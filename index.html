@@ -5,9 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/lobbypage.css" />
     <title>BrickBreaker</title>
   </head>
   <body class="bg-gray-800 text-white">
+    <div id="lobbypage" class="page">
+      <div class="page-container">
+        <div
+          class="bg-gray-700 p-5 rounded-lg shadow-md flex flex-col justify-center items-center"
+        >
+          <span class="font-bold text-3xl mb-5">BrickBreaker</span>
+          <input
+            type="text"
+            id="username-input"
+            class="px-3 py-2 rounded-lg text-black mb-3 placeholder:text-gray-700"
+            placeholder="Input Username..."
+          />
+          <div class="flex w-full gap-3">
+            <button
+              type="button"
+              id="play-game"
+              class="bg-blue-600 w-3/5 px-3 py-2 rounded-lg transition-colors hover:bg-blue-700 hover:text-gray-300"
+            >
+              Play Game
+            </button>
+            <button
+              type="button"
+              id="play-game"
+              class="border-gray-400 w-2/5 px-3 py-2 border rounded-lg transition-colors hover:border-gray-500 hover:text-gray-300"
+            >
+              Tutorial
+            </button>
+          </div>
+
+          <div
+            id="tutorial-modal"
+            class="fixed inset-0 flex justify-center items-center"
+          >
+            <div
+              class="bg-gray-700 rounded-lg shadow-md flex flex-col justify-center items-center"
+            >
+              <div
+                class="flex items-center w-full border-b border-b-gray-500 px-5 py-3"
+              >
+                <span class="font-bold text-xl">How to play?</span>
+                <button
+                  type="button"
+                  id="close-tutorial-modal"
+                  class="text-gray-400 p-0.5 rounded ml-auto transition-colors hover:bg-gray-600 hover:text-gray-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+              <ol class="ml-5 list-decimal p-5">
+                <li>Input your username and press the play game button</li>
+                <li>Move the paddle using your mouse</li>
+                <li>Control the ball by bouncing it on the paddle</li>
+                <li>Break the bricks to score points</li>
+                <li>Don't let balls fall to the bottom</li>
+                <li>Enjoy!</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>
